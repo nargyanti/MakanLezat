@@ -3,28 +3,50 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Restaurant Apps Starter Project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MakanLezat</title>
 </head>
 
-<body>
+<body">
+    <a href="#content" class="skip-link">Skip to content</a>
     <header>
         <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#">Favorite</a></li>
-                <li><a href="https://github.com/nargyanti/">About Us</a></li>
-            </ul>
+            <div class="nav__brand">
+                <h1 class="nav__brand-logo">MakanLezat</h1>
+            </div>
+            <div class="nav__menu">
+                <a href="#" id="hamburger">☰</a>
+            </div>
+            <div id="drawer">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html">Home</a></li>
+                    <li class="nav__item"><a href="#">Favorite</a></li>
+                    <li class="nav__item"><a href="https://github.com/nargyanti/">About Us</a></li>
+                </ul>
+            </div>
         </nav>
+        <div class="jumbotron">
+            <div class="jumbotron__body">
+                <h1 class="jumbotron__brand">MakanLezat</h1>
+                <p class="jumbotron__caption">Temukan rekomendasi restoran yang menyajikan makanan dan minuman lezat di
+                    sini!
+                </p>
+            </div>
+        </div>
     </header>
-    <main>
 
+    <main id="content">
+        <section>
+            <div class="section__title">
+                <h1>Daftar Rekomendasi Restoran</h1>
+            </div>
+            <div class="restaurant-list">
+            </div>
+        </section>
     </main>
-    <div id="content">
-
-    </div>
     <footer>
-        <p>Copyright &#169; 2021 MakanLezat</p>
+        <p>Copyright &#169; 2021 - MakanLezat</p>
     </footer>
-</body>
+    </body>
 
 </html>
