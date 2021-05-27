@@ -26,11 +26,11 @@ body {
     padding: 0.5em 1.2em;
     z-index: 100;  
     font-size: 20px;  
- }
+}
 
 .skip-link:focus {
     top: 0;
- }
+}
 
 nav {
     background-color: #52310a ;
@@ -70,13 +70,12 @@ nav {
 .nav__item {
     display: inline-block;    
     box-sizing: border-box;
-    margin: 0 1em;                                 
 }
 
 .nav__item a {
     color: white;    
-    text-decoration: none;                
-    padding: 23;   
+    text-decoration: none;                        
+    padding: 23px;    
 }
 
 .nav__item a:focus {
@@ -93,6 +92,10 @@ nav {
     padding: 6em 0;
 }
 
+.jumbotron__brand {
+    font-weight: 500;
+}
+
 .jumbotron__body {
     color: #ffffff;   
     line-height: 1.75;         
@@ -105,19 +108,9 @@ nav {
     padding: 0 1.4em;
 }
 
-.jumbotron__brand {
-    font-weight: 500;
-}
-
 main {
     background-color: #dba96b;
     padding: 1em;
-}
-
-.restaurant-list {
-    display: grid;
-    width: 100%;       
-    row-gap: 1.5em;            
 }
 
 .section__title {
@@ -130,6 +123,13 @@ main {
     color: #ffdaad;
     padding: 0.4em;   
     margin-bottom: 1em;  
+}
+
+
+.restaurant-list {
+    display: grid;
+    width: 100%;       
+    row-gap: 1.5em;            
 }
 
 .restaurant-list__item {
@@ -217,20 +217,20 @@ footer {
     
     .nav__item a:focus {
         background-color: #dba96b;
-        color: #000000;              
+        color: #000000;               
     }
 
 }
 
 @media screen and (min-width: 700px) {
-    .restaurant-list {
-        grid-template-columns: repeat(2, 1fr);     
-        column-gap: 1.5em;    
-    }   
-
     .nav__menu {
         display: none;
     }
+    
+    .restaurant-list {
+        grid-template-columns: repeat(2, 1fr);     
+        column-gap: 1.5em;    
+    }       
 }
 
 @media screen and (min-width: 1000px) {
