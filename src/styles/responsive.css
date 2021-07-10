@@ -1,0 +1,63 @@
+@media screen and (max-width: 700px) {                
+    .nav__brand-logo {
+        font-size: 2em;        
+    }
+
+    #drawer {
+        position: absolute;
+        top: 4em;
+        right: 0;
+        z-index: 1;
+        background-color: #52310a;
+        width: 200px;                
+        padding: 0.1em;
+        -webkit-transform: translate (0px, 0);
+        transform: translate(200px, -500px);              
+    }
+
+    #drawer.open {
+        -webkit-transform: translate (0, 0);
+        transform: translate(0, 0);       
+    }
+
+    .nav__list {
+        padding: 0;
+        margin: 0;
+    }
+
+    .nav__item {        
+        width: 100%;
+        text-align: center;                      
+        font-size: 18px;         
+        padding: 23px;
+        margin: 0;
+    }
+    
+    .nav__item a:focus {
+        background-color: #dba96b;
+        color: #000000;               
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .nav__menu {
+        display: none;
+    }
+    
+    .restaurant-list {
+        grid-template-columns: repeat(2, 1fr);     
+        column-gap: 1.5em;    
+    }       
+}
+
+@media screen and (min-width: 1030px) {
+    .restaurant-list {
+        grid-template-columns: repeat(3, 1fr);              
+    }
+}
+
+@media screen and (min-width: 1320px) {
+    .restaurant-list {
+        grid-template-columns: repeat(4, 1fr);               
+    }
+}
