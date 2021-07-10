@@ -11,25 +11,33 @@ const app = new App({
     jumbotron: document.querySelector('.jumbotron'),
 });
 
-const renderRestaurantListItem = function() {
-    console.log(restaurants);
-    const restaurantListItem = document.querySelector('.restaurant-list');
-    restaurantListItem.innerHTML = '';
-    restaurants.forEach((restaurant) => {
-        restaurantListItem.innerHTML += `
-        <section class="restaurant-list__item">
-            <div class="restaurant-list__item__header">
-                <h2>${restaurant.name}</h2>
-                <p class="restaurant-list__item__rating">&#9733; ${restaurant.rating}</p>
-                <img class="restaurant-list__item__image" src="${restaurant.pictureId}" alt="Foto restoran ${restaurant.name}">
-            </div>
-            <div class="restaurant-list__item__body">
-                <p class="restaurant-list__item__body__location">Lokasi: ${restaurant.city}</p>                
-            </div>
-            <button class="restaurant-list__item__detail-button" onclick="location.href='#'">Detail</button>
-        </section>
-        `;
-    });
-};
+window.addEventListener('hashchange', () => {
+    app.renderPage();
+});
 
-document.addEventListener('DOMContentLoaded', renderRestaurantListItem);
+window.addEventListener('load', () => {
+    app.renderPage();
+});
+
+// const renderRestaurantListItem = function() {
+//     console.log(restaurants);
+//     const restaurantListItem = document.querySelector('.restaurant-list');
+//     restaurantListItem.innerHTML = '';
+//     restaurants.forEach((restaurant) => {
+//         restaurantListItem.innerHTML += `
+//         <section class="restaurant-list__item">
+//             <div class="restaurant-list__item__header">
+//                 <h2>${restaurant.name}</h2>
+//                 <p class="restaurant-list__item__rating">&#9733; ${restaurant.rating}</p>
+//                 <img class="restaurant-list__item__image" src="${restaurant.pictureId}" alt="Foto restoran ${restaurant.name}">
+//             </div>
+//             <div class="restaurant-list__item__body">
+//                 <p class="restaurant-list__item__body__location">Lokasi: ${restaurant.city}</p>
+//             </div>
+//             <button class="restaurant-list__item__detail-button" onclick="location.href='#/detail/:id'">Detail</button>
+//         </section>
+//         `;
+//     });
+// };
+
+// document.addEventListener('DOMContentLoaded', renderRestaurantListItem);
