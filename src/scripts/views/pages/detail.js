@@ -12,7 +12,6 @@ const Detail = {
     async afterRender() {
         const url = UrlParser.parseActiveUrlWithoutCombiner();
         const restaurant = await RestaurantDicodingSource.detailRestaurant(url.id);
-        console.log(restaurant);
         const restaurantContainer = document.querySelector('#restaurant');
         restaurantContainer.innerHTML = createRestaurantDetailTemplate(restaurant);
     },
