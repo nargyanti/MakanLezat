@@ -5,7 +5,7 @@ const Favorite = {
                 <div class="content__title">
                     <h1>Daftar Restoran Favorit</h1>
                 </div>
-                <article class="restaurant-list"></article>
+                <article id="restaurant-list" class="restaurant-list"></article>
             </div>
         `;
     },

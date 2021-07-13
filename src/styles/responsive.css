@@ -1,4 +1,31 @@
-@media screen and (max-width: 700px) {                
+@media screen and (min-width: 500px) {      
+    #restaurant {     
+        padding: 1.5em 2.1em;        
+    }
+    
+    .restaurant__picture {
+        height: 200px;
+        width: auto;
+    }
+
+    .restaurant__menus {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 1.2em;               
+        justify-items: center;   
+        align-content: center;
+    }
+
+    .restaurant__menus h2 {
+        grid-column-start: 1;        
+        grid-column-end: 3;
+    }
+
+    .restaurant__menus__foods, .restaurant__menus__drinks {
+        margin: 0;      
+    }
+}
+
+@media screen and (max-width: 718px) {                
     .nav__brand-logo {
         font-size: 2em;        
     }
@@ -33,26 +60,50 @@
         margin: 0;
     }
     
-    .nav__item a:focus {
+    .nav__item a:focus, .nav__item a:hover {
         background-color: #dba96b;
-        color: #000000;               
+        color: #000000;   
     }
+
 }
 
 @media screen and (min-width: 700px) {
-    .nav__menu {
-        display: none;
-    }
-    
     .restaurant-list {
         grid-template-columns: repeat(2, 1fr);     
         column-gap: 1.5em;    
+    }
+
+    .restaurant__picture {
+        height: 250px;    
+    }
+}
+
+@media screen and (min-width: 718px) {
+    .nav__menu {
+        display: none;
     }       
 }
 
 @media screen and (min-width: 1030px) {
     .restaurant-list {
         grid-template-columns: repeat(3, 1fr);              
+    }
+
+    #restaurant {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 1.6em;
+        column-gap: 1.2em;
+    }
+
+    .restaurant__picture {
+        height: auto;
+        width: 450px;
+        margin: 0 auto;    
+    }
+
+    .restaurant__name, .restaurant__menus, .restaurant__reviews {
+        grid-column-start: 1;
+        grid-column-end: 3;
     }
 }
 

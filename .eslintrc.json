@@ -21,6 +21,7 @@
         "linebreak-style": "off",
         "require-jsdoc": "off",
         "object-curly-spacing": "off",
-        "no-unused-vars": "off"
+        "no-unused-vars": "off",
+        "new-cap": "off"
     }
 }

@@ -74,15 +74,16 @@ nav {
     display: inline-block;    
     box-sizing: border-box;
     font-size: 18px;
+    font-weight: 500;
 }
 
 .nav__item a {
     color: white;    
-    text-decoration: none;                        
+    text-decoration: none;
     padding: 23px;    
 }
 
-.nav__item a:focus {
+.nav__item a:focus, .nav__item a:hover  {
     background-color: #dba96b;
     color: #000000;    
     padding: 23px;    
@@ -183,7 +184,8 @@ main {
 
 .restaurant-list__item__detail-button {
     padding: 15px 25px;
-    font-size: 1.5em;
+    font-size: 1.3em;
+    font-weight: 700;
     text-align: center;    
     outline: none;
     color: #fff;
@@ -193,8 +195,9 @@ main {
     width: 100%;
 }
 
-.restaurant-list__item__detail-button:focus {    
-    border: 7px solid #dba96b;        
+.restaurant-list__item__detail-button:focus, .restaurant-list__item__detail-button:hover {        
+    background-color: #dba96b;
+    color: #52310a;
 }
 
 footer {
@@ -202,4 +205,75 @@ footer {
 	color: #ffffff;
 	background-color: #52310a;
 	text-align: center;           
+}
+
+#restaurant {
+    background-color: #ffffff;      
+    padding: 1.5em 1em;
+    border-radius: 15px;    
+    display: grid;    
+    width: 100%;
+    line-height: 1.5;
+    row-gap: 1.2em;
+}
+
+.restaurant__name {
+    text-align: center;    
+}
+
+.restaurant__picture {
+    width: 200px;
+    margin: 0 auto;
+    object-fit: cover;
+}
+
+.restaurant__information__table td {    
+    padding-right: 1em;
+    vertical-align: top;
+}
+
+.restaurant__information__description {
+    margin-top: 1em;
+    text-align: justify;    
+}
+
+.restaurant__menus {
+    display: grid;        
+    padding: 0.5em 1em;    
+}
+
+.restaurant__menus h2, .restaurant__reviews h2 {
+    text-align: center;        
+}
+
+.restaurant__menus__foods h3, .restaurant__menus__drinks h3 {
+    text-decoration: underline;
+}
+
+.restaurant__menus__foods, .restaurant__menus__drinks {
+    margin: 0.5em 0;
+}
+
+.restaurant__reviews__item {
+    margin: 1em 0;
+    border: 1px solid #52310a;    
+    padding: 0.7em;
+    border-radius: 10px;
+}
+
+.restaurant__reviews__item__header {
+    display: grid;
+}
+
+.restaurant__reviews__item__header h3 {
+    font-size: 1.1em;    
+}
+
+.restaurant__reviews__item__header time {
+    font-size: 0.8em;    
+    color: rgb(105, 105, 105);
+}
+
+.restaurant__reviews__item__content {
+    margin-top: 0.4em;
 }
