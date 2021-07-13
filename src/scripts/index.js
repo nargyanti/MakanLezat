@@ -1,4 +1,6 @@
 import 'regenerator-runtime'; /* for async await transpile */
+import './components/jumbotron';
+import './components/app-bar';
 import '../styles/style.css';
 import '../styles/responsive.css';
 import App from './views/app';
