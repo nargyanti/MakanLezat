@@ -76,6 +76,11 @@
     .restaurant__picture {
         height: 250px;    
     }
+
+    .restaurant__none {        
+        grid-column-start: 1;    
+        grid-column-end: 3;
+    }
 }
 
 @media screen and (min-width: 718px) {
@@ -105,10 +110,20 @@
         grid-column-start: 1;
         grid-column-end: 3;
     }
+
+    .restaurant__none {        
+        grid-column-start: 1;    
+        grid-column-end: 4;
+    }
 }
 
 @media screen and (min-width: 1320px) {
     .restaurant-list {
         grid-template-columns: repeat(4, 1fr);               
+    }
+
+    .restaurant__none {        
+        grid-column-start: 1;    
+        grid-column-end: 5;
     }
 }

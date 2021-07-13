@@ -18,7 +18,7 @@ const Favorite = {
         const restaurantListContainer = document.querySelector('#restaurant-list');
         if (restaurantList.length === 0) {
             restaurantListContainer.innerHTML = `
-            <p>Anda tidak mempunyai restoran favorit</p>
+            <p class="restaurant__none">Anda tidak mempunyai restoran favorit</p>
             `;
         }
 

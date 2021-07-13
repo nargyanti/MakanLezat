@@ -217,6 +217,15 @@ footer {
     row-gap: 1.2em;
 }
 
+.restaurant__none {
+    background-color: #ffffff;
+    padding: 1em;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 15px;
+}
+
 .restaurant__name {
     text-align: center;    
 }
@@ -278,9 +287,6 @@ footer {
     margin-top: 0.4em;
 }
 
-/*
-   Like
-*/
 .like {
     font-size: 18px;
     position: fixed;
@@ -294,7 +300,4 @@ footer {
     width: 55px;
     height: 55px;
     cursor: pointer;
-    /* display: flex; 
-    align-items: center;
-    justify-content: center; */
 }
