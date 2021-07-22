@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[5],{5:function(e,r){var o="\\sw.js";Object.defineProperty(r,"__esModule",{value:!0}),r.default={register:function(){var e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{};return!!navigator.serviceWorker&&navigator.serviceWorker.register(o,e)}},e.exports=r.default}}]);

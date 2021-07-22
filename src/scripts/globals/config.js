@@ -1,6 +1,6 @@
 const CONFIG = {
     BASE_URL: 'https://restaurant-api.dicoding.dev/',
-    BASE_IMAGE_URL: 'https://restaurant-api.dicoding.dev/images/medium/',
+    BASE_IMAGE_URL: 'https://restaurant-api.dicoding.dev/images/',
     CACHE_NAME: new Date().toISOString(),
     DATABASE_NAME: 'makan-lezat-database',
     DATABASE_VERSION: 1,
