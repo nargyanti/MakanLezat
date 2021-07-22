@@ -27,6 +27,6 @@ class App {
         this._content.innerHTML = await page.render();
         await page.afterRender();
     }
-};
+}
 
 export default App;

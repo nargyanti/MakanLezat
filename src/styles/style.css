@@ -90,9 +90,8 @@ nav {
 }
 
 .jumbotron {    
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),  url("../public/images/jumbotron/jumbotron.jpg");
-    background-size: cover;        
-    background-position: center;    
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),  url("../public/images/jumbotron/jumbotron.jpg") center;
+    background-size: cover;            
     text-align: center;
     padding: 6em 0;
 }

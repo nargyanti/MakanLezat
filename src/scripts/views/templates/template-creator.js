@@ -30,14 +30,14 @@ const createRestaurantDetailTemplate = (restaurant) => `
     </div>    
     <div class="restaurant__menus"> 
         <h2>Menu</h2>       
-        <ul class="restaurant__menus__foods">
+        <div class="restaurant__menus__foods">
             <h3>Makanan</h3>
-            ${restaurant.menus.foods.map((food) => `<li>${food.name}</li>`).join('')}
-        </ul>
-        <ul class="restaurant__menus__drinks">        
+            <ul>${restaurant.menus.foods.map((food) => `<li>${food.name}</li>`).join('')}</ul>
+        </div>
+        <div class="restaurant__menus__drinks">
             <h3>Minuman</h3>
-            ${restaurant.menus.drinks.map((drink) => `<li>${drink.name}</li>`).join('')}
-        </ul>
+            <ul>${restaurant.menus.drinks.map((drink) => `<li>${drink.name}</li>`).join('')}</ul>
+        </div>
     </div>
     <div class="restaurant__reviews"> 
         <h2>Customer Reviews</h2>           
@@ -65,8 +65,8 @@ const createRestaurantItemTemplate = (restaurant) => `
         </div>
         <div class="restaurant-list__item__body">
             <p class="restaurant-list__item__body__location">Lokasi: ${restaurant.city}</p>
-        </div>
-        <button class="restaurant-list__item__detail-button" onclick="location.href='${`/#/detail/${restaurant.id}`}'">Detail</button>
+        </div>        
+        <button class="restaurant-list__item__detail-button" onclick="location.href='/#/detail/${restaurant.id}'">Detail</button>
     </section>
 `;
 
