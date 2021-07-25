@@ -1,3 +1,19 @@
+@media screen and (max-width: 340px) {      
+    main {
+        background-color: #dba96b;
+        padding: 1.3em 1.5em;
+    }
+    
+    #restaurant {     
+        padding: 0.6em;        
+    }
+
+    .restaurant__picture {
+        width: 150px;
+    }
+
+}
+
 @media screen and (min-width: 500px) {      
     #restaurant {     
         padding: 1.5em 2.1em;        
@@ -73,7 +89,7 @@
     }
 
     .content__title {        
-        font-size: 16px;
+        font-size: 15px;
     }
 }
 
