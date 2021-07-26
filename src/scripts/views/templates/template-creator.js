@@ -3,7 +3,7 @@ import CONFIG from '../../globals/config';
 const createRestaurantDetailTemplate = (restaurant) => `
     <h1 class="restaurant__name">${restaurant.name}</h1>
     <picture class="restaurant__picture">
-        <source media="(max-width: 718px)" srcset="${CONFIG.BASE_IMAGE_URL + 'small/' + restaurant.pictureId}">        
+        <source media="(max-width: 718px)" data-srcset="${CONFIG.BASE_IMAGE_URL + 'small/' + restaurant.pictureId}">        
         <img class="restaurant__picture lazyload" src="./images/placeholder.jpg" data-src="${CONFIG.BASE_IMAGE_URL + 'medium/' + restaurant.pictureId}" alt="Foto restoran ${restaurant.name}">
     </picture>
     <div class="restaurant__information">
@@ -63,11 +63,8 @@ const createRestaurantItemTemplate = (restaurant) => `
     <section class="restaurant-list__item">
         <div class="restaurant-list__item__header">
             <h2>${restaurant.name}</h2>
-            <p class="restaurant-list__item__rating">&#9733; ${restaurant.rating}</p>
-            <picture>
-                <source media="(max-width: 718px)" srcset="${CONFIG.BASE_IMAGE_URL + 'small/' + restaurant.pictureId}">
-                <img class="restaurant-list__item__image lazyload" src="./images/placeholder.jpg" data-src="${CONFIG.BASE_IMAGE_URL + 'medium/' + restaurant.pictureId}" alt="Foto restoran ${restaurant.name}">
-            </picture>
+            <p class="restaurant-list__item__rating">&#9733; ${restaurant.rating}</p>                         
+            <img class="restaurant-list__item__image lazyload" src="./images/placeholder.jpg" data-src="${CONFIG.BASE_IMAGE_URL + 'small/' + restaurant.pictureId}" alt="Foto restoran ${restaurant.name}">            
         </div>
         <div class="restaurant-list__item__body">
             <p class="restaurant-list__item__body__location">Lokasi: ${restaurant.city}</p>
